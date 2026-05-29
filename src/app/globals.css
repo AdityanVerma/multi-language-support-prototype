@@ -1,0 +1,92 @@
+@import 'tailwindcss';
+
+:root {
+  color-scheme: light;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+/* Hide Google Translate default UI elements and banner frames */
+#google_translate_element {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  visibility: hidden;
+}
+.goog-te-banner-frame.skiptranslate,
+.goog-te-balloon-frame,
+.goog-te-tooltip,
+.goog-te-tooltip:hover,
+.goog-te-gadget-icon {
+  display: none !important;
+}
+body {
+  top: 0 !important;
+}
+.goog-te-combo {
+  display: none !important;
+}
+
+/* Preserve layout after translation */
+body .notranslate {
+  display: inline;
+}
+
+::selection {
+  background: #c7d2fe;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+/* Hide Google Translate top banner */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+/* Hide default Google widget UI */
+.goog-te-gadget {
+  font-size: 0 !important;
+}
+
+.goog-te-combo {
+  display: none !important;
+}
+
+/* Optional: Hide Google branding */
+.goog-logo-link {
+  display: none !important;
+}
+
+.skiptranslate iframe {
+  display: none !important;
+}
