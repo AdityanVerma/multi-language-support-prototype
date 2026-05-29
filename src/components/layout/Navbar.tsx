@@ -5,7 +5,8 @@ import LanguageSwitcher from '../ui/LanguageSwitcher';
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-xl notranslate" translate='no'>
+    // <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-xl notranslate" translate='no'>
+    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-xl">
       <div className="container mx-auto flex flex-wrap items-center justify-between gap-4 px-6 py-4">
         <Link href="/" className="text-lg font-semibold tracking-tight text-slate-900">
           <span className="inline-flex items-center gap-3">
